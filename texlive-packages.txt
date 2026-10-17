@@ -1,0 +1,15 @@
+# TeX Live packages needed to build the CV (installed by CI on top of scheme-basic).
+scheme-basic
+xetex
+fontspec
+# Used by deedy-resume-openfont.cls and main.tex
+academicons
+cite
+etoolbox
+fontawesome
+isodate
+makecell
+substr
+textpos
+titlesec
+xcolor

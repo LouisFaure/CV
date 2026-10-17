@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%!TEX program = xelatex
+\documentclass[12pt]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{fontawesome}
+\usepackage{academicons}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{6pt}
+
+% Green ORCID brand colour
+\definecolor{orcidgreen}{HTML}{A6CE39}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     HEADER (photo + name + contact)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.147\textwidth}
+\vspace{0pt}
+\includegraphics[width=\linewidth]{profile.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.80\textwidth}
+\vspace{0pt}
+{\fontsize{30pt}{34pt}\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont Louis \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont Faure}\normalfont\\[3pt]
+{\fontsize{13pt}{16pt}\selectfont
+Full name: Louis Felix Benoit Faure\\
+\faEnvelope\ \href{mailto:faurel1@mskcc.org}{faurel1@mskcc.org} - born the 10/12/1994, France - French\\
+{\color{orcidgreen}\aiOrcid}\ \href{https://orcid.org/0000-0003-4621-586X}{0000-0003-4621-586X} - \faGithub\ \href{https://github.com/LouisFaure}{LouisFaure} - \href{https://louis.faure.dev/}{https://louis.faure.dev/}
+}
+\end{minipage}
+
+\vspace{2pt}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+\vspace{-14pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     EDUCATION (two columns)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent\begin{minipage}[t]{0.44\textwidth}
+
+\section{Post-Graduate Education}
+\subsection{Doctoral}
+\location{Sept 2018 - June 2023 | Medical University of Vienna}
+PhD Neuroscience N094
+\sectionsep
+
+\subsection{Pre-Doctoral}
+\location{Sept 2017 - June 2018 | PSL University Paris}
+Institute for Technology \& Innovation Diploma
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.54\textwidth}
+
+\section{Pre-Graduate Education}
+\subsection{Graduate}
+\location{Sept 2015 - June 2017 | CRI, Descartes University, Paris}
+Interdisciplinary Approaches in Life Sciences (AIV) Msc.
+\sectionsep
+
+\subsection{Undergraduate}
+\location{Sept 2012 - May 2015 | CRI, Descartes University, Paris}
+Frontiers in Life Science (FdV) Bsc.
+
+\end{minipage}
+
+\vspace{10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     EXPERIENCE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Post-Graduate Experience}
+
+\runsubsection{Ruslan Soldatov lab}\descript{| Postdoctoral Research Scholar}
+\location{October 2023 – now | Memorial Sloan Kettering Cancer Center, New York}
+Computational approaches to decode the initiation of tumor growth.
+\sectionsep
+
+\runsubsection{Igor Adameyko lab}\descript{| PhD student}
+\location{September 2018 – June 2023 | Center for Brain Research, Vienna}
+Heterogeneity of neural crest and Schwann cell precursors during development
+
+\vspace{6pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     FIRST AUTHOR PUBLICATIONS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{First Author Publications}
+
+\input{publications-first}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     PAGE 2
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LECTURES / TALKS & POSTERS (two columns)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lectures/Talks \& Posters}
+\vspace{-2pt}
+\noindent\begin{minipage}[t]{0.48\textwidth}
+\descript{Broad Single Cell Seminar Series - online talk}
+Interpretable VAE for modeling cell fate dynamics across tissue contexts \location{October 2024 | Broad Institute}
+\sectionsep
+
+\descript{Computational Oncology Retreat - talk}
+Joint modeling of shared and disease-specific fate dynamics \location{April 2024 | MSKCC}
+\sectionsep
+
+\descript{GRS \& GRC Single-Cell Cancer Biology - poster}
+FateUnzip: Joint modeling of shared and disease-specific fate dynamics \location{2024 | Manchester, New Hampshire, USA}
+\end{minipage}
+\hfill
+\noindent\begin{minipage}[t]{0.48\textwidth}
+\descript{scverse community meeting - online talk}
+scFates, a scalable Python suite for fast tree inference and advanced pseudotime downstream analysis \location{June 2024 | scverse}
+\sectionsep
+
+\descript{NEUcrest Big Data course - online lecture}
+Introduction to trajectory inference methods in scRNAseq analysis \location{April 2021 | EMBL-EBI}
+\sectionsep
+
+\descript{FENS conference - poster}
+Schwann cell precursors represent a neural crest-like state with biased multipotency \location{2022 | FENS Forum Paris, France}
+\end{minipage}
+
+\vspace{10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS (two columns)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards}
+\vspace{-2pt}
+\noindent\begin{minipage}[t]{0.48\textwidth}
+\descript{Marie-Josée Kravis Fellowship}
+Fellowship in Quantitative Biology for cancer research. \location{2025 | MSKCC}
+\sectionsep
+
+\descript{MIRES}
+Excellence scholarship for international mobility. 5000€ \location{2017 | Descartes University}
+\end{minipage}
+\hfill
+\noindent\begin{minipage}[t]{0.48\textwidth}
+\descript{FENS-IBRO/PERC Grant}
+Travel grant to attend the FENS Conference. 750€ \location{2022 | FENS Forum}
+\end{minipage}
+
+\vspace{10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OTHER PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Other Publications}
+
+\input{publications-other}
+
+\vspace{12pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\vspace{8pt}
+
+\renewcommand{\arraystretch}{1.2}
+\noindent\begin{tabular}{@{}ccccccccccc@{}}
+\includegraphics[height=9mm]{python.pdf} &
+\includegraphics[height=9mm]{snakemake.png} &
+\includegraphics[height=9mm]{pyro.png} &
+\includegraphics[height=9mm]{JAX.png} &
+\includegraphics[height=9mm]{R.pdf} &
+\includegraphics[height=9mm]{matlab.png} &
+\includegraphics[height=9mm]{Tux.pdf} &
+\includegraphics[height=9mm]{Fiji.pdf} &
+\includegraphics[height=9mm]{insitu.pdf} &
+\includegraphics[height=9mm]{Cloning.pdf} &
+\includegraphics[height=9mm]{ableton.pdf} \\
+python & snakemake & pyro & JAX & R & MATLAB & Linux & ImageJ & FISH & cloning & music prod
+\end{tabular}
+
+\vfill
+\hfill{\color{headings}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{9pt}{11pt}\selectfont Generated with \LaTeX}
+
+\end{document}
